@@ -16,5 +16,14 @@ use  App\Http\Controllers\Controller ;
 
 
 Route::get('/', [Controller::class, 'homepage']);
-Route::get('/login', [Controller::class, 'login']);
 Route::get('/cadastro', [Controller::class, 'cadastro']);
+
+//Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+//Routes to user auth
+
+Route::get('/login', [Controller::class, 'login']);
+Route::get('/login', [Controller::class, 'login'])->name('user.login');

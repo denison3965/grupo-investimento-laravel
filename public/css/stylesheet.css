@@ -1,0 +1,97 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline: none;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+         -box-sizing: border-box;
+}
+
+body {
+  max-width: 100vw;
+}
+
+/*
+ * ===================================== *
+ * stylesheet to login pages
+ * ===================================== *
+ */
+ .background{
+   position: absolute;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image:url(../assets/images/background.jpg);
+   background-size: cover;
+ }
+
+ section#conteudo-view{
+   position: absolute;
+   right: 0;
+   float:right;
+   padding: 20px;
+   width: 500px;
+   height:100%;
+   background: #00000099;
+   border-left: 2px solid #E0B207;
+ }
+
+section#conteudo-view h1 {
+    float: left;
+    width: 100%;
+    font: 4em 'Roboto', cursive;
+    margin-top: 150px;
+    color: #F1F1F1;
+}
+
+section#conteudo-view h3,
+section#conteudo-view form p  {
+    float: left;
+    width: 100%;
+    font: 1em 'Roboto', cursive;
+    color: #F1F1F1;
+}
+
+section#conteudo-view form,
+section#conteudo-view form label{
+  float: left;
+  width: 100%;
+}
+
+section#conteudo-view form {
+  margin-top: 40px;
+}
+
+section#conteudo-view form p{
+  font-size: 1.25em;
+}
+
+section#conteudo-view form label input{
+  margin-top: 20px;
+  float: left;
+  width: 100%;
+  height: 40px;
+  padding: 0 20px;
+  border-bottom: 2px solid #E0B207;
+  background: none;
+  color: white;
+  font-size: 20px;
+}
+
+
+section#conteudo-view form input[type="submit"] {
+  background:    #dfb008;
+  border-radius: 1px;
+  padding:       10px 17px;
+  color:         #F1F1F1;
+  display:       inline-block;
+  font:          normal 1.3em "Roboto", sans-serif;
+  text-align:    center;
+  margin-left: 38%;
+  margin-top: 20px;
+  cursor: pointer;
+}

@@ -23,6 +23,7 @@ class Controller extends BaseController
     }
 
     public function login () {
-      echo "Tela de login";
+
+      return view('user.login');
     }
 }
