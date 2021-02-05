@@ -5,7 +5,7 @@
     <title>Login | Investindo</title>
     <link rel="stylesheet" href="{{ asset('css/stylesheet.css') }}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
   </head>
   <body>
 
@@ -16,8 +16,8 @@
       <h1> <strong> Investimento </strong></h1>
       <h3>O nosso gerenciador de insvestimento</h3>
 
-      {!! Form::open(['route' => 'user.login', 'method' => 'post']) !!}
-
+      {!! Form::open(['route' => 'user.login', 'method' => 'POST']) !!}
+        @csrf
         <p> <strong> Acesse o sistema </strong> </p>
 
         <label>
@@ -31,6 +31,8 @@
 
         {!! Form::submit('Entrar') !!}
       {!! Form::close() !!}
+
+
 
 
     </section>
