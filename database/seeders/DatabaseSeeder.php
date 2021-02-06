@@ -22,7 +22,7 @@ class DatabaseSeeder extends Seeder
           'birth' => '1980-10-01' ,
           'gender' => 'M' ,
           'email' => 'joao@sistema.com' ,
-          'password' => bcrypt('1234')  ,
+          'password' => env('PASSWORD_HASH') ? bcrypt('1234') : '1234' ,
         ]);
 
         // \App\Models\User::factory(10)->create();
