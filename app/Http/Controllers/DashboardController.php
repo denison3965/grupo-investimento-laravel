@@ -23,6 +23,9 @@ class DashboardController extends Controller
     $this->validator = $validator;
   }
 
+
+
+
   public function auth(Request $request)
   {
     $data = [
@@ -67,7 +70,11 @@ class DashboardController extends Controller
     }
   }
 
-  public function index() {
-    return "Estamos logados";
+
+
+
+  public function index()
+  {
+    return view('user.dashboard');
   }
 }
