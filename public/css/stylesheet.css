@@ -1,3 +1,20 @@
+/* ANIMATIONS */
+@keyframes grow {
+  /* Passos */
+  from {
+      height: 0px;
+      width: 0px;
+      margin-top: 100px;
+      margin-left: 100px;
+  }
+  to {
+      height: 200px;
+      width: 200px;
+      margin-top: 0px;
+      margin-left: 0px;
+  }
+}
+
 *{
   padding: 0;
   margin: 0;
@@ -207,4 +224,80 @@ section#conteudo-view form input[type="submit"] {
     height:100%;
     padding: 20px 20px 20px 300px;
     z-index: 1;
+  }
+
+
+   /*
+  * ===================================== *
+  * stylesheet from
+  * ===================================== *
+  */
+  .form-padrao {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    z-index: 99;
+  }
+  .form-padrao label{
+    width: 50%;
+    margin-bottom: 15px;
+  }
+  .form-padrao span{
+    font-size: 20px;
+    color: #E0B207 !important;
+  }
+  .form-padrao input{
+    margin-top: 15px;
+    display: flex;
+    border-bottom: 1px solid #111;
+    width: 80%;
+    background-color: transparent;
+    font-size: 18px;
+    color: #555 !important;
+    padding-left: 12px;
+    transition: 0.1s;
+  
+  }
+
+  .form-padrao input:hover {
+    border-bottom: 2px solid #111;
+  }
+
+  .btn_send{
+
+  }
+
+  .btn_send input {
+    border: none  !important;        
+    background-color: #E0B207;
+    height: 50px;
+    text-transform: uppercase;
+    color : white !important;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+  }
+
+  .title_main{
+    font-family: Roboto;
+    color: #555;
+    
+  }
+
+  .marca_dagua img{
+    position: absolute;
+    z-index: 1;
+    height: 200px;
+    width: 200px;
+    top: 50%;
+    left: 50%;
+    opacity: 0.3;
+    animation-name: grow;
+    animation-duration: 1s;
   }

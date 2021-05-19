@@ -1,6 +1,6 @@
 <nav id="principal">
   <div class="logo-area">
-    <i> <img src="{{URL::asset('/assets/images/logo.png')}}" alt=""> </i>
+    <i> <img src="{{URL::asset('/assets/images/logo.png')}}" alt="Logo Invester"> </i>
     <p>Invester</p>
   </div>
 
